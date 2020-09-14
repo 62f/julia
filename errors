@@ -1,0 +1,815 @@
+libtool: compile:  gcc -march=pentium4 -m32 "-DPACKAGE_NAME=\"libuv\"" "-DPACKAGE_TARNAME=\"libuv\"" "-DPACKAGE_VERSION=\"2.0.0\"" "-DPACKAGE_STRING=\"libuv 2.0.0\"" "-DPACKAGE_BUGREPORT=\"https://github.com/libuv/libuv/issues\"" "-DPACKAGE_URL=\"\"" "-DPACKAGE=\"libuv\"" "-DVERSION=\"2.0.0\"" -DSUPPORT_FLAG_VISIBILITY=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 "-DLT_OBJDIR=\".libs/\"" -DHAVE_LIBDL=1 -DHAVE_LIBPTHREAD=1 -DHAVE_LIBRT=1 -I. -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1 -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/include -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix -I/usr/bin/cc/include/c++/5.3.0: -O2 -pedantic -g -std=gnu99 -Wall -Wextra -Wno-unused-parameter -Wstrict-prototypes -D_GNU_SOURCE -O2 -pedantic -g -std=gnu99 -Wall -Wextra -Wno-unused-parameter -Wstrict-prototypes -MT src/unix/libuv_la-process.lo -MD -MP -MF src/unix/.deps/libuv_la-process.Tpo -c /root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix/process.c  -fPIC -DPIC -o src/unix/.libs/libuv_la-process.o
+/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix/process.c: In function 'uv_spawn':
+/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix/process.c:523:41: warning: passing argument 3 to restrict-qualified parameter aliases with argument 2 [-Wrestrict]
+  523 |   pthread_sigmask(SIG_SETMASK, &sigset, &sigset);
+      |                                ~~~~~~~  ^~~~~~~
+libtool: compile:  gcc -march=pentium4 -m32 "-DPACKAGE_NAME=\"libuv\"" "-DPACKAGE_TARNAME=\"libuv\"" "-DPACKAGE_VERSION=\"2.0.0\"" "-DPACKAGE_STRING=\"libuv 2.0.0\"" "-DPACKAGE_BUGREPORT=\"https://github.com/libuv/libuv/issues\"" "-DPACKAGE_URL=\"\"" "-DPACKAGE=\"libuv\"" "-DVERSION=\"2.0.0\"" -DSUPPORT_FLAG_VISIBILITY=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 "-DLT_OBJDIR=\".libs/\"" -DHAVE_LIBDL=1 -DHAVE_LIBPTHREAD=1 -DHAVE_LIBRT=1 -I. -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1 -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/include -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src -I/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix -I/usr/bin/cc/include/c++/5.3.0: -O2 -pedantic -g -std=gnu99 -Wall -Wextra -Wno-unused-parameter -Wstrict-prototypes -D_GNU_SOURCE -O2 -pedantic -g -std=gnu99 -Wall -Wextra -Wno-unused-parameter -Wstrict-prototypes -MT src/unix/libuv_la-thread.lo -MD -MP -MF src/unix/.deps/libuv_la-thread.Tpo -c /root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix/thread.c  -fPIC -DPIC -o src/unix/.libs/libuv_la-thread.o
+/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix/thread.c: In function 'uv_thread_create_ex':
+/root/julia/deps/srccache/libuv-35b1504507a7a4168caae3d78db54d1121b121e1/src/unix/thread.c:229:35: warning: cast between incompatible function types from 'void (*)(void *)' to 'void * (*)(void *)' [-Wcast-function-type]
+  229 |   err = pthread_create(tid, attr, (void*(*)(void*)) entry, arg);
+      |                                   ^
+Making all in src
+make[3]: Entering directory '/root/julia/deps/scratch/patchelf-0.9/src'
+g++ -march=pentium4 -m32 -DPACKAGE_NAME=\"patchelf\" -DPACKAGE_TARNAME=\"patchelf\" -DPACKAGE_VERSION=\"0.9\" -DPACKAGE_STRING=\"patchelf\ 0.9\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"patchelf\" -DVERSION=\"0.9\" -DPAGESIZE=4096 -I. -I/root/julia/deps/srccache/patchelf-0.9/src   -I/usr/bin/cc/include/c++/5.3.0: -Wall -g -O2 -MT patchelf.o -MD -MP -MF .deps/patchelf.Tpo -c -o patchelf.o /root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc
+In file included from /root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc:28:
+/root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc: In instantiation of 'void ElfFile<Elf_Ehdr, Elf_Phdr, Elf_Shdr, Elf_Addr, Elf_Off, Elf_Dyn, Elf_Sym>::rewriteSectionsLibrary() [with Elf_Ehdr = Elf64_Ehdr; Elf_Phdr = Elf64_Phdr; Elf_Shdr = Elf64_Shdr; Elf_Addr = long long unsigned int; Elf_Off = long long unsigned int; Elf_Dyn = Elf64_Dyn; Elf_Sym = Elf64_Sym]':
+/root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc:788:9:   required from 'void ElfFile<Elf_Ehdr, Elf_Phdr, Elf_Shdr, Elf_Addr, Elf_Off, Elf_Dyn, Elf_Sym>::rewriteSections() [with Elf_Ehdr = Elf64_Ehdr; Elf_Phdr = Elf64_Phdr; Elf_Shdr = Elf64_Shdr; Elf_Addr = long long unsigned int; Elf_Off = long long unsigned int; Elf_Dyn = Elf64_Dyn; Elf_Sym = Elf64_Sym]'
+/root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc:1452:9:   required from 'void patchElf2(ElfFile&) [with ElfFile = ElfFile<Elf64_Ehdr, Elf64_Phdr, Elf64_Shdr, long long unsigned int, long long unsigned int, Elf64_Dyn, Elf64_Sym>]'
+/root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc:1484:26:   required from here
+/root/julia/deps/srccache/patchelf-0.9/src/patchelf.cc:644:19: warning: comparison of integer expressions of different signedness: 'long long unsigned int' and 'off_t' {aka 'long long int'} [-Wsign-compare]
+  644 |     assert(curOff == startOffset + neededSpace);
+      |                   ^
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer  -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -DUTF8PROC_EXPORTS -Wall -Wno-strict-aliasing -fvisibility=hidden -Wpointer-arith -Wundef -DNDEBUG -DJL_NDEBUG -c /root/julia/src/support/hashing.c -o /root/julia/src/support/hashing.o
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer  -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -DUTF8PROC_EXPORTS -Wall -Wno-strict-aliasing -fvisibility=hidden -Wpointer-arith -Wundef -DNDEBUG -DJL_NDEBUG -c /root/julia/src/support/timefuncs.c -o /root/julia/src/support/timefuncs.o
+In file included from /root/julia/src/support/timefuncs.c:21:
+/usr/include/sys/poll.h:1:2: warning: #warning redirecting incorrect #include <sys/poll.h> to <poll.h> [-Wcpp]
+    1 | #warning redirecting incorrect #include <sys/poll.h> to <poll.h>
+      |  ^~~~~~~
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/runtime_ccall.cpp -o runtime_ccall.o
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/rtutils.c -o rtutils.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/rtutils.c:24:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/rtutils.c:24:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/codegen.cpp -o codegen.o
+In file included from /root/julia/src/codegen.cpp:60:
+/root/julia/usr/include/llvm/ADT/Statistic.h:72:5: warning: "LLVM_ENABLE_STATS" is not defined, evaluates to 0 [-Wundef]
+   72 | #if LLVM_ENABLE_STATS
+      |     ^~~~~~~~~~~~~~~~~
+/root/julia/src/codegen.cpp: In function 'bool emit_builtin_call(jl_codectx_t&, jl_cgval_t*, jl_value_t*, const jl_cgval_t*, size_t, jl_value_t*, jl_expr_t*)':
+/root/julia/src/codegen.cpp:2398:32: warning: comparison of integer expressions of different signedness: 'ssize_t' {aka 'int'} and 'const uint32_t' {aka 'const unsigned int'} [-Wsign-compare]
+ 2398 |                 if (i > 0 && i <= jl_datatype_nfields(uty))
+/root/julia/src/codegen.cpp:2557:38: warning: comparison of integer expressions of different signedness: 'ssize_t' {aka 'int'} and 'const uint32_t' {aka 'const unsigned int'} [-Wsign-compare]
+ 2557 |         if (fieldidx < 0 || fieldidx >= jl_datatype_nfields(stt)) {
+In file included from /root/julia/usr/include/llvm/CodeGen/TargetSubtargetInfo.h:17,
+                 from /root/julia/src/codegen.cpp:36:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = long long unsigned int]':
+/root/julia/usr/include/llvm/IR/DIBuilder.h:644:74:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<long long unsigned int>::Data' from 'std::initializer_list<long long unsigned int>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Metadata*]':
+/root/julia/src/cgutils.cpp:437:63:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Metadata*>::Data' from 'std::initializer_list<llvm::Metadata*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/cgutils.cpp:898:69:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/intrinsics.cpp:1309:49:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+In file included from /root/julia/src/codegen.cpp:857:
+/root/julia/src/cgutils.cpp: At global scope:
+/root/julia/src/cgutils.cpp:2920:12: warning: 'int compare_cgparams(const jl_cgparams_t*, const jl_cgparams_t*)' defined but not used [-Wunused-function]
+ 2920 | static int compare_cgparams(const jl_cgparams_t *a, const jl_cgparams_t *b)
+      |            ^~~~~~~~~~~~~~~~
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-ptls.cpp -o llvm-ptls.o
+In file included from /root/julia/usr/include/llvm/ADT/DenseMapInfo.h:16,
+                 from /root/julia/usr/include/llvm/ADT/DenseMap.h:16,
+                 from /root/julia/usr/include/llvm/PassRegistry.h:19,
+                 from /root/julia/usr/include/llvm/PassSupport.h:25,
+                 from /root/julia/usr/include/llvm/Pass.h:364,
+                 from /root/julia/src/llvm-ptls.cpp:15:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/llvm-ptls.cpp:138:83:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/jltypes.c -o jltypes.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jltypes.c:14:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jltypes.c:14:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/gf.c -o gf.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gf.c:14:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gf.c:14:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/typemap.c -o typemap.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/typemap.c:6:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/rtutils.c:24:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/codegen.cpp -o codegen.o
+In file included from /root/julia/src/codegen.cpp:60:
+/root/julia/usr/include/llvm/ADT/Statistic.h:72:5: warning: "LLVM_ENABLE_STATS" is not defined, evaluates to 0 [-Wundef]
+   72 | #if LLVM_ENABLE_STATS
+      |     ^~~~~~~~~~~~~~~~~
+/root/julia/src/codegen.cpp: In function 'bool emit_builtin_call(jl_codectx_t&, jl_cgval_t*, jl_value_t*, const jl_cgval_t*, size_t, jl_value_t*, jl_expr_t*)':
+/root/julia/src/codegen.cpp:2398:32: warning: comparison of integer expressions of different signedness: 'ssize_t' {aka 'int'} and 'const uint32_t' {aka 'const unsigned int'} [-Wsign-compare]
+ 2398 |                 if (i > 0 && i <= jl_datatype_nfields(uty))
+/root/julia/src/codegen.cpp:2557:38: warning: comparison of integer expressions of different signedness: 'ssize_t' {aka 'int'} and 'const uint32_t' {aka 'const unsigned int'} [-Wsign-compare]
+ 2557 |         if (fieldidx < 0 || fieldidx >= jl_datatype_nfields(stt)) {
+In file included from /root/julia/usr/include/llvm/CodeGen/TargetSubtargetInfo.h:17,
+                 from /root/julia/src/codegen.cpp:36:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = long long unsigned int]':
+/root/julia/usr/include/llvm/IR/DIBuilder.h:644:74:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<long long unsigned int>::Data' from 'std::initializer_list<long long unsigned int>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Metadata*]':
+/root/julia/src/cgutils.cpp:437:63:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Metadata*>::Data' from 'std::initializer_list<llvm::Metadata*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/cgutils.cpp:898:69:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/intrinsics.cpp:1309:49:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+In file included from /root/julia/src/codegen.cpp:857:
+/root/julia/src/cgutils.cpp: At global scope:
+/root/julia/src/cgutils.cpp:2920:12: warning: 'int compare_cgparams(const jl_cgparams_t*, const jl_cgparams_t*)' defined but not used [-Wunused-function]
+ 2920 | static int compare_cgparams(const jl_cgparams_t *a, const jl_cgparams_t *b)
+      |            ^~~~~~~~~~~~~~~~
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-ptls.cpp -o llvm-ptls.o
+In file included from /root/julia/usr/include/llvm/ADT/DenseMapInfo.h:16,
+                 from /root/julia/usr/include/llvm/ADT/DenseMap.h:16,
+                 from /root/julia/usr/include/llvm/PassRegistry.h:19,
+                 from /root/julia/usr/include/llvm/PassSupport.h:25,
+                 from /root/julia/usr/include/llvm/Pass.h:364,
+                 from /root/julia/src/llvm-ptls.cpp:15:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/llvm-ptls.cpp:138:83:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL
+_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/jltypes.c -o jltypes.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jltypes.c:14:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jltypes.c:14:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/gf.c -o gf.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gf.c:14:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gf.c:14:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB
+ "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/typemap.c -o typemap.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/typemap.c:6:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/typemap.c:6:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/smallintset.c -o smallintset.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/smallintset.c:6:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/smallintset.c:6:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/
+src/ast.c -o ast.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/ast.c:14:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/ast.c:14:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/builtins.c -o builtins.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/builtins.c:24:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/builtins.c:24:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/module.c -o module.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/module.c:7:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/module.c:7:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/interpreter.c -o interpreter.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/interpreter.c:9:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/interpreter.c:9:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/symbol.c -o symbol.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/symbol.c:11:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/symbol.c:11:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/dlload.c -o dlload.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/dlload.c:10:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/dlload.c:10:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/sys.c -o sys.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/sys.c:15:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/sys.c:15:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/init.c -o init.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/init.c:25:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/init.c:25:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/task.c -o task.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/task.c:35:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/task.c:35:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/array.c -o array.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/array.c:12:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/array.c:12:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+/root/julia/src/array.c: In function 'jl_array_grow_at':
+/root/julia/src/array.c:883:39: warning: 'newtypetagdata' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  883 |                 memset(newtypetagdata + idx, 0, inc);
+      |                        ~~~~~~~~~~~~~~~^~~~~
+/root/julia/src/array.c:860:11: note: 'newtypetagdata' was declared here
+  860 |     char *newtypetagdata;
+      |           ^~~~~~~~~~~~~~
+/root/julia/src/array.c:882:77: warning: 'typetagdata' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  882 |          if (has_gap) memcpy(newtypetagdata + idx + inc, typetagdata + idx, n - idx);
+      |                                                          ~~~~~~~~~~~~^~~~~
+
+/root/julia/src/array.c:859:11: note: 'typetagdata' was declared here
+  859 |     char *typetagdata;
+      |           ^~~~~~~~~~~
+/root/julia/src/array.c: In function 'jl_array_grow_end':
+/root/julia/src/array.c:883:39: warning: 'newtypetagdata' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  883 |                 memset(newtypetagdata + idx, 0, inc);
+      |                        ~~~~~~~~~~~~~~~^~~~~
+/root/julia/src/array.c:860:11: note: 'newtypetagdata' was declared here
+  860 |     char *newtypetagdata;
+      |           ^~~~~~~~~~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/dump.c -o dump.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/dump.c:10:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/dump.c:10:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/staticdata.c -o staticdata.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/staticdata.c:11:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/staticdata.c:11:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/toplevel.c -o toplevel.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/toplevel.c:19:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/toplevel.c:19:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/jl_uv.c -o jl_uv.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jl_uv.c:21:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C,
+ size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jl_uv.c:21:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/datatype.c -o datatype.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/datatype.c:12:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/datatype.c:12:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/simplevector.c -o simplevector.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/simplevector.c:7:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+ size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/simplevector.c:7:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/runtime_intrinsics.c -o runtime_intrinsics.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/runtime_intrinsics.c:12:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/runtime_intrinsics.c:12:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/precompile.c -o precompile.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/precompile.c:11:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+ size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/precompile.c:11:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/threading.c -o threading.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/threading.c:10:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/threading.c:10:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/partr.c -o partr.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/partr.c:9:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/partr.c:9:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/stackwalk.c -o stackwalk.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/stackwalk.c:9:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/stackwalk.c:9:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/gc.c -o gc.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc.c:3:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc.c:3:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/gc-debug.c -o gc-debug.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc-debug.c:3:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc-debug.c:3:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/gc-pages.c -o gc-pages.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc-pages.c:3:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc-pages.c:3:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/gc-stacks.c -o gc-stacks.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc-stacks.c:3:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/gc.h:20,
+                 from /root/julia/src/gc-stacks.c:3:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+   gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/method.c -o method.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/method.c:11:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/method.c:11:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/jlapi.c -o jlapi.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jlapi.c:16:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/jlapi.c:16:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bi
+n/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/signal-handling.c -o signal-handling.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/signal-handling.c:8:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/signal-handling.c:8:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+In file included from /root/julia/src/signal-handling.c:117:
+/root/julia/src/signals-unix.c: In function 'jl_thread_suspend_and_get_state':
+/root/julia/src/signals-unix.c:304:23: warning: passing argument 1 of 'pthread_kill' makes pointer from integer without a cast [-Wint-conversion]
+  304 |     pthread_kill(ptls2->system_id, SIGUSR2);
+      |                  ~~~~~^~~~~~~~~~~
+      |                       |
+      |                       long unsigned int
+In file included from /root/julia/usr/include/uv/unix.h:44,
+                 from /root/julia/usr/include/uv.h:59,
+                 from /root/julia/src/support/ios.h:7,
+                 from /root/julia/src/support/libsupport.h:13,
+                 from /root/julia/src/julia.h:12,
+                 from /root/julia/src/signal-handling.c:7:
+/usr/include/signal.h:216:18: note: expected 'pthread_t' {aka 'struct __pthread *'} but argument is of type 'long unsigned int'
+  216 | int pthread_kill(pthread_t, int);
+      |                  ^~~~~~~~~
+In file included from /root/julia/src/signal-handling.c:117:
+/root/julia/src/signals-unix.c: In function 'jl_try_deliver_sigint':
+/root/julia/src/signals-unix.c:331:23: warning: passing argument 1 of 'pthread_kill' makes pointer from integer without a cast [-Wint-conversion]
+  331 |     pthread_kill(ptls2->system_id, SIGUSR2);
+      |                  ~~~~~^~~~~~~~~~~
+      |                       |
+      |                       long unsigned int
+In file included from /root/julia/usr/include/uv/unix.h:44,
+                 from /root/julia/usr/include/uv.h:59,
+                 from /root/julia/src/support/ios.h:7,
+                 from /root/julia/src/support/libsupport.h:13,
+                 from /root/julia/src/julia.h:12,
+                 from /root/julia/src/signal-handling.c:7:
+/usr/include/signal.h:216:18: note: expected 'pthread_t' {aka 'struct __pthread *'} but argument is of type 'long unsigned int'
+  216 | int pthread_kill(pthread_t, int);
+      |                  ^~~~~~~~~
+In file included from /root/julia/src/signal-handling.c:117:
+/root/julia/src/signals-unix.c: In function 'jl_exit_thread0':
+/root/julia/src/signals-unix.c:358:23: warning: passing argument 1 of 'pthread_kill' makes pointer from integer without a cast [-Wint-conversion]
+  358 |     pthread_kill(ptls2->system_id, SIGUSR2);
+      |                  ~~~~~^~~~~~~~~~~
+      |                       |
+      |                       long unsigned int
+In file included from /root/julia/usr/include/uv/unix.h:44,
+                 from /root/julia/usr/include/uv.h:59,
+                 from /root/julia/src/support/ios.h:7,
+                 from /root/julia/src/support/libsupport.h:13,
+                 from /root/julia/src/julia.h:12,
+                 from /root/julia/src/signal-handling.c:7:
+/usr/include/signal.h:216:18: note: expected 'pthread_t' {aka 'struct __pthread *'} but argument is of type 'long unsigned int'
+  216 | int pthread_kill(pthread_t, int);
+      |                  ^~~~~~~~~
+In file included from /root/julia/src/signal-handling.c:117:
+/root/julia/src/signals-unix.c: In function 'signal_listener':
+/root/julia/src/signals-unix.c:619:5: warning: "_POSIX_C_SOURCE" is not defined, evaluates to 0 [-Wundef]
+  619 | #if _POSIX_C_SOURCE >= 199309L
+      |     ^~~~~~~~~~~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/safepoint.c -o safepoint.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/safepoint.c:4:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/safepoint.c:4:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/timing.c -o timing.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/timing.c:5:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/timing.c:5:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/subtype.c -o subtype.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/subtype.c:28:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/subtype.c:28:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ gcc -march=pentium4 -m32 -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -Wold-style-definition -Wstrict-prototypes -Wc++-compat -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DNDEBUG -DJL_NDEBUG -c /root/julia/src/crc32c.c -o crc32c.o
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/crc32c.c:45:
+/root/julia/usr/include/libunwind-x86.h:158:16: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  158 | typedef struct unw_tdep_save_loc
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /root/julia/usr/include/libunwind.h:23,
+                 from /root/julia/src/julia_internal.h:780,
+                 from /root/julia/src/crc32c.c:45:
+/root/julia/usr/include/libunwind-x86.h:169:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wc++-compat]
+  169 | typedef struct
+      |         ^~~~~~
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-final-gc-lowering.cpp -o llvm-final-gc-lowering.o
+In file included from /root/julia/usr/include/llvm/ADT/DenseMapInfo.h:16,
+                 from /root/julia/usr/include/llvm/ADT/DenseMap.h:16,
+                 from /root/julia/usr/include/llvm/PassRegistry.h:19,
+                 from /root/julia/usr/include/llvm/PassSupport.h:25,
+                 from /root/julia/usr/include/llvm/Pass.h:364,
+                 from /root/julia/usr/include/llvm/IR/LegacyPassManager.h:19,
+                 from /root/julia/src/llvm-final-gc-lowering.cpp:5:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/llvm-final-gc-lowering.cpp:194:67:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-pass-helpers.cpp -o llvm-pass-helpers.o
+In file included from /root/julia/usr/include/llvm/ADT/DenseMapInfo.h:16,
+                 from /root/julia/usr/include/llvm/ADT/DenseMap.h:16,
+                 from /root/julia/usr/include/llvm/ADT/DenseSet.h:16,
+                 from /root/julia/usr/include/llvm/IR/Function.h:20,
+                 from /root/julia/src/llvm-pass-helpers.cpp:10:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/llvm-pass-helpers.cpp:157:26:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-
+rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-late-gc-lowering.cpp -o llvm-late-gc-lowering.o
+In file included from /root/julia/src/llvm-late-gc-lowering.cpp:12:
+/root/julia/usr/include/llvm/Analysis/CFG.h:136:1: warning: multi-line comment [-Wcomment]
+  136 | ///  /   \
+      | ^
+In file included from /root/julia/usr/include/llvm/ADT/BitVector.h:16,
+                 from /root/julia/src/llvm-late-gc-lowering.cpp:8:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/llvm-late-gc-lowering.cpp:2092:22:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/llvm-late-gc-lowering.cpp:2162:101:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-lower-handlers.cpp -o llvm-lower-handlers.o
+In file included from /root/julia/src/llvm-lower-handlers.cpp:9:
+/root/julia/usr/include/llvm/Analysis/CFG.h:136:1: warning: multi-line comment [-Wcomment]
+  136 | ///  /   \
+      | ^
+In file included from /root/julia/usr/include/llvm/IR/Instruction.h:17,
+                 from /root/julia/usr/include/llvm/IR/BasicBlock.h:22,
+                 from /root/julia/usr/include/llvm/Analysis/CFG.h:17,
+17,
+                 from /root/julia/src/llvm-lower-handlers.cpp:9:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/llvm-lower-handlers.cpp:124:90:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-gc-invariant-verifier.cpp -o llvm-gc-invariant-verifier.o
+In file included from /root/julia/src/llvm-gc-invariant-verifier.cpp:13:
+/root/julia/usr/include/llvm/Analysis/CFG.h:136:1: warning: multi-line comment [-Wcomment]
+  136 | ///  /   \
+      | ^
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-propagate-addrspaces.cpp -o llvm-propagate-addrspaces.o
+In file included from /root/julia/src/llvm-propagate-addrspaces.cpp:9:
+/root/julia/usr/include/llvm/Analysis/CFG.h:136:1: warning: multi-line comment [-Wcomment]
+  136 | ///  /   \
+      | ^
+In file included from /root/julia/usr/include/llvm/IR/Instruction.h:17,
+                 from /root/julia/usr/include/llvm/IR/BasicBlock.h:22,
+                 from /root/julia/usr/include/llvm/Analysis/CFG.h:17,
+                 from /root/julia/src/llvm-propagate-addrspaces.cpp:9:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/llvm-propagate-addrspaces.cpp:261:62:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-multiversioning.cpp -o llvm-multiversioning.o
+In file included from /root/julia/usr/include/llvm/ADT/DenseMapInfo.h:16,
+                 from /root/julia/usr/include/llvm/ADT/DenseMap.h:16,
+                 from /root/julia/usr/include/llvm/PassRegistry.h:19,
+                 from /root/julia/usr/include/llvm/PassSupport.h:25,
+                 from /root/julia/usr/include/llvm/Pass.h:364,
+                 from /root/julia/src/llvm-multiversioning.cpp:14:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = unsigned int]':
+/root/julia/src/llvm-multiversioning.cpp:772:46:   required from 'llvm::Value* {anonymous}::CloneCtx::rewrite_inst_use(const Stack&, llvm::Value*, llvm::Instruction*) [with Stack = llvm::SmallVector<{anonymous}::ConstantUses<llvm::Instruction>::Frame, 4>]'
+/root/julia/src/llvm-multiversioning.cpp:824:69:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<unsigned int>::Data' from 'std::initializer_list<unsigned int>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+ g++ -march=pentium4 -m32 -I/root/julia/usr/include -std=c++11   -fno-exceptions -fno-rtti -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -I/usr/bin/cc/include/c++/5.3.0: -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -D_GNU_SOURCE -I. -I/root/julia/src -I/root/julia/src/flisp -I/root/julia/src/support -I/root/julia/usr/include -I/root/julia/usr/include -DLIBRARY_EXPORTS -I/root/julia/deps/valgrind -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -fvisibility=hidden -fno-common -Wpointer-arith -Wundef -Wno-unused-result -DJL_BUILD_ARCH='"i586"' -DJL_BUILD_UNAME='"Linux"' -I/root/julia/usr/include -DLLVM_SHLIB "-DJL_SYSTEM_IMAGE_PATH=\"../lib/julia/sys.so\"" -DJL_NDEBUG -DNDEBUG -c /root/julia/src/llvm-alloc-opt.cpp -o llvm-alloc-opt.o
+In file included from /root/julia/usr/include/llvm/ADT/SetVector.h:22,
+                 from /root/julia/src/llvm-alloc-opt.cpp:12:
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Value*]':
+/root/julia/src/llvm-alloc-opt.cpp:720:62:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Value*>::Data' from 'std::initializer_list<llvm::Value*>::begin' does not ex
+tend the lifetime of the underlying array [-Winit-list-lifetime]
+  101 |     : Data(Vec.begin() == Vec.end() ? (T*)nullptr : Vec.begin()),
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::AllocaInst*]':
+/root/julia/src/llvm-alloc-opt.cpp:1463:50:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::AllocaInst*>::Data' from 'std::initializer_list<llvm::AllocaInst*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+/root/julia/usr/include/llvm/ADT/ArrayRef.h: In instantiation of 'llvm::ArrayRef<T>::ArrayRef(const std::initializer_list<_Tp>&) [with T = llvm::Type*]':
+/root/julia/src/llvm-alloc-opt.cpp:1491:90:   required from here
+/root/julia/usr/include/llvm/ADT/ArrayRef.h:101:37: warning: initializing 'llvm::ArrayRef<llvm::Type*>::Data' from 'std::initializer_list<llvm::Type*>::begin' does not extend the lifetime of the underlying array [-Winit-list-lifetime]
+
