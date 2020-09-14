@@ -1,0 +1,15 @@
+bash-5.0# git clean -fdx
+bash-5.0# make -j1 VERBOSE=1 | tee log
+make[1]: Entering directory '/root/julia/ui'
+ gcc -march=pentium4 -m32 -I/usr/bin/cc/include/c++/5.3.0: -fasynchronous-unwind-tables -DJULIA_NUM_THREADS=1 -std=gnu99 -pipe -fPIC -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -I/root/julia/src -I/root/julia/src -I/root/julia/src/support -I/root/julia/usr/include -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -Wc++-compat -c /root/julia/ui/repl.c -o repl.o
+ g++ -march=pentium4 -m32 -pipe -fPIC -fno-rtti -pedantic -D_FILE_OFFSET_BITS=64   -O3 -ggdb2 -falign-functions -momit-leaf-frame-pointer -I/root/julia/src -I/root/julia/src -I/root/julia/src/support -I/root/julia/usr/include -Wall -Wno-strict-aliasing -fno-omit-frame-pointer -Wc++-compat ./repl.o -o /root/julia/usr/bin/julia -L/root/julia/usr/lib/julia -L/root/julia/usr/lib -L/root/julia/usr/lib -ljulia -Wl,-Bdynamic -Wl,-no-undefined  -Wl,--no-whole-archive -Wl,--no-as-needed -ldl -lrt -lpthread -Wl,--export-dynamic,--as-needed,--no-whole-archive -Wl,--version-script=/root/julia/src/julia.expmap -Wl,-rpath,'$ORIGIN/../lib' -Wl,-rpath,'$ORIGIN/../lib/julia' -Wl,-rpath-link,/root/julia/usr/lib -Wl,-z,origin 
+/usr/lib/gcc/i586-alpine-linux-musl/9.3.0/../../../../i586-alpine-linux-musl/bin/ld: /root/julia/usr/lib/libLLVM-9jl.so: .dynsym local symbol at index 1 (>= sh_info of 1)
+/usr/lib/gcc/i586-alpine-linux-musl/9.3.0/../../../../i586-alpine-linux-musl/bin/ld: /root/julia/usr/lib/libLLVM-9jl.so: .dynsym local symbol at index 2 (>= sh_info of 1)
+/usr/lib/gcc/i586-alpine-linux-musl/9.3.0/../../../../i586-alpine-linux-musl/bin/ld: /root/julia/usr/lib/libLLVM-9jl.so: .dynsym local symbol at index 3 (>= sh_info of 1)
+/usr/lib/gcc/i586-alpine-linux-musl/9.3.0/../../../../i586-alpine-linux-musl/bin/ld: warning: libc.musl-i386.so.1, needed by /root/julia/usr/lib/libLLVM-9jl.so, not found (try using -rpath or -rpath-link)
+/usr/lib/gcc/i586-alpine-linux-musl/9.3.0/../../../../i586-alpine-linux-musl/bin/ld: /root/julia/usr/lib/libunwind.so.8: undefined reference to `setcontext'
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:86: /root/julia/usr/bin/julia] Error 1
+make[1]: Leaving directory '/root/julia/ui'
+make: *** [Makefile:78: julia-ui-release] Error 2
+bash-5.0#
